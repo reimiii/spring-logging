@@ -16,4 +16,11 @@ public class LoggingTest {
         log.warn("learn java");
         log.error("omg omg");
     }
+
+    @Test
+    void logFor() {
+        for (int i = 0; i < 100_000; i++) {
+            log.warn("log from: {}", i);
+        }
+    }
 }
